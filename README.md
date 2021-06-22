@@ -41,25 +41,12 @@ CNN_Transformer 文件夹中包含CeiT的相关文件
 python train.py -c configs/default.yaml --name "name_of_exp"
 ```
 
-### Usage :
+### test :
 ```python
-import torch
-from ceit import CeiT
-
-img = torch.ones([1, 3, 224, 224])
-    
-model = CeiT(image_size = 224, patch_size = 4, num_classes = 100)
-out = model(img)
-
-print("Shape of out :", out.shape)      # [B, num_classes]
-
-model = CeiT(image_size = 224, patch_size = 4, num_classes = 100, with_lca = True)
-out = model(img)
-
-print("Shape of out :", out.shape)      # [B, num_classes]
+python test.py -c configs/defaul.yaml --name "test" -p checkpoint/checkpoint.pyt
 
 ```
-
+checkpoint 文件见百度网盘
 
 
 
