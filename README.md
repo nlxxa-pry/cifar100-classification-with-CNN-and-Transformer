@@ -12,9 +12,10 @@ CeiT：
 提取码：4aej  
   
 CNN：  
-百度网盘链接：https://pan.baidu.com/s/1nIJchHSRkY14v3aSb7xG3w  
-提取码：bt6x  
-
+百度网盘链接：https://pan.baidu.com/s/1Y53VkqbLyD9MOciWnZd76w 
+提取码：kfus   
+  
+  
 
 ## CNN
 CNN 文件夹中包含两个模型，ResNet50 和 DenseNet201 
@@ -25,11 +26,10 @@ python train.py -net resnet50/densenet201 -gpu
 ```
 
 ### test：
-test.py 文件位于CNN/utils/中
 ```python
-python test.py -net resnet50/densenet201  -weights checkpoint_path -gpu
+python test.py -net densenet201 -weights checkpoint/densenet201.pth -gpu
 ```
-checkpoint_path 是已训练好的模型的路径，如checkpoint/densenet201.pth
+checkpoint文件见百度网盘  
  
  
 ## CeiT
@@ -47,7 +47,8 @@ python test.py -c configs/defaul.yaml --name "test" -p checkpoint/checkpoint.pyt
 
 ```
 checkpoint 文件见百度网盘
-
+  
+  
 
 
 ## Reference:
